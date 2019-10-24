@@ -5,10 +5,11 @@
   background: url(/img/cover1.png);
   color: #fff;
   transition: background-image 0.5s ease-in-out;
-  padding: {
-    top: 14px;
-  }
   position: relative;
+  box-sizing: border-box;
+  top: 0;
+  bottom: 0;
+  padding: 28px 14px;
   header.cover-header {
     background: rgba(#fff, 0.3);
     width: auto;

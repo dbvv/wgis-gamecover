@@ -1,3 +1,52 @@
 .notification-group {
   border-radius: 7px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.notification {
+  background: rgba(#fff, 0.3);
+  padding: 5px 10px;
+  padding-left: 60px;
+  position: relative;
+  margin: 0px;
+  font-weight: bold;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    margin: 0;
+    vertical-align: middle;
+    font-size: 12px;
+  }
+  &:before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 45px;
+    height: 45px;
+    content: '';
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &:first-child {
+    border-radius: 7px 7px 0px 0px;
+  }
+  &:last-child {
+    border-radius: 0px 0px 7px 7px;
+  }
+  &.danger-notification {
+    color: #E2574C;
+    &:before {
+      background-image: url('/img/danger.webp');
+    }
+  }
+  &.download-notification {
+    color: #2394BC;
+    &:before {
+      background-image: url('/img/download.webp')
+    }
+  }
 }
