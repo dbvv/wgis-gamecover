@@ -1,0 +1,4 @@
+[ ] nitial release
+  [ ] create base structure
+  [ ] styling
+  [ ] change cover dynamicly
