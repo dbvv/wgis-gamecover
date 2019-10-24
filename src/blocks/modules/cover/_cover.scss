@@ -1,0 +1,44 @@
+.cover {
+  font-family: 'Tahoma',AdobeInvisFont,MyriadPro-Regular;
+  width: 100vw;
+  height: 100vh;
+  background: url(/img/cover1.png);
+  color: #fff;
+  transition: background-image 0.5s ease-in-out;
+  padding: {
+    top: 14px;
+  }
+  position: relative;
+  header.cover-header {
+    background: rgba(#fff, 0.3);
+    width: auto;
+    max-width: 450px;
+    min-height: 80px;
+    margin: 0 auto;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 48px;
+    }
+  }
+
+  .advices {
+    position: absolute;
+    bottom: 11px;
+    left: 11px;
+    background: rgba(#fff, 0.3);
+    padding: 6px;
+    min-width: 129px;
+    border-radius: 4px;
+  }
+
+  .right-bottom {
+    position: absolute;
+    bottom: 38px;
+    right: 13px;
+  }
+}
